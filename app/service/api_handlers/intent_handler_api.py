@@ -1,4 +1,4 @@
-from app.service.api_handlers.pl_help import respond_programming_help
+from app.service.api_handlers.pl_help import respond_programming_help, respond_observability_help
 
 
 async def handle_greeting():
@@ -13,7 +13,7 @@ async def handle_programming_help(language):
     ##return f"I can help you with {language} programming. What specific question do you have?"
 
 async def handle_observability_info(tool):
-    return f"Here is some info about {tool}. What details are you interested in?"
+    return await respond_observability_help(tool)
 
 async def handle_get_weather(location, time=None):
     time_str = f" at {time}" if time else ""

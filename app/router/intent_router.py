@@ -10,7 +10,7 @@ INTENT_REQUIREMENTS = {
     "greeting": [],
     "casual_talk": [],
     "programming_help": ["language"],
-    "observability_info": ["tool"],
+    "observability_info": [],
     "get_weather": ["location"],  # 'time' optional
     "unknown": []
 }
